@@ -2,7 +2,6 @@ import os
 # shutil is library that allows us to move a files inside our computer's file system
 import shutil
 
-
 def clean_folder(folder_path):
     list_files=os.listdir(folder_path)
     print(f"in folder {folder_path} this are the files {list_files}")
@@ -22,18 +21,11 @@ def clean_folder(folder_path):
                     print(f"New file path already exists {new_file_path}")
 
                
-
-
 def create_subfolder_if_needed(folder_path, sub_folder):
     sub_folder_path=os.path.join(folder_path,sub_folder)
     if not os.path.exists(sub_folder_path):
         os.makedirs(sub_folder_path)
     return sub_folder_path
-
-
-
-
-
 
 
 if __name__=="__main__":
